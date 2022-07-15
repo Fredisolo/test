@@ -21,7 +21,7 @@ hit[0] = prompt('сколько вам лет');
 hit[1] = prompt('как вас зовут');
 hit[2] = prompt('Ваша фамилия');
 
-document.write(typeof(hit));
+//document.write(typeof(hit));
 
 const jon = 'fedor';
 console.log(`Привет,${jon}`);
