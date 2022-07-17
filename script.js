@@ -1,27 +1,24 @@
 "srtict";
 
-const obj = {
-  name: "Petir",
-  arg: 22,
-  id: 125
-} ;
-console.log(obj.id);
 
 
-let arr = [1, 2, 3, "html", "css" ];
-console.log(arr[2]);
 
-const arrr = prompt("вам есть 18", "");
-console.log(arrr); 
+const numberOfFilms = prompt("Сколько фильмов вы уже просмотрели", "");
 
-const answer = confirm("dfsakdfjaf");
+const personalMovieDB = { 
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
 
-const hit = [];
-hit[0] = prompt('сколько вам лет');
-hit[1] = prompt('как вас зовут');
-hit[2] = prompt('Ваша фамилия');
+const a = prompt("Один из последних просмотренных фильмов", ""),
+      b = prompt("На сколько оцените его", ""),
+      v = prompt("Один из последних просмотренных фильмов", ""),
+      d = prompt("На сколько оцените его", "");
 
-//document.write(typeof(hit));
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[v] = d;
 
-const jon = 'fedor';
-console.log(`Привет,${jon}`);
+console.log(personalMovieDB);
