@@ -1,19 +1,52 @@
-const numberOfFimls = +prompt('Сколько милимов вы уже просмотрели', '');
 
-const personalMovieDB = {
-  count: numberOfFimls,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false
-};
+const name = "Fedor"
+const age = 33
 
-const a = prompt('Один из последних просмотрених фильмов', ''),
-      b = prompt('На сколько оцените его', ''),
-      c = prompt('Один из последних просмотрених фильмов', ''),
-      d = prompt('На сколько оцените его', '');
+const litle = {
+ name,
+ age,
+ title: {
+  tip: 'integer',
+  solo: 'liga'
+ }
+}
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+console.log(litle.title.tip)
 
-console.log(personalMovieDB);
+const user ={
+  name: 'Fedor',
+  age: function() {         // это метод 
+    console.log('Privet')
+  }
+}
+user.age()
+
+
+const user = {
+  name: 'Fedor',
+  age () {                  //Опустили слово function и :
+    console.log('Privet')
+  }
+}
+user.age()
+
+function myFn(a, b) {
+  let c;
+  a = a + 1;
+  c = a + b;
+  return c;
+}
+
+console.log(myFn(5, 10));
+
+const a = 10;
+
+
+  function innerFn() {
+    console.log(a);
+  }
+  innerFn();
+
+  const result = confirm('Are you here');
+  console.log(result);
+
